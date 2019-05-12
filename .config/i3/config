@@ -96,14 +96,14 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 # Mode
 ## Resize
 mode "resize"{
-bindsym j resize shrink width 10px or 10 ppt	 #left
-bindsym k resize grow height 10px or 10 ppt 	 #down
-bindsym i resize shrink height 10px or 10 ppt    #up
-bindsym l resize grow width 10px or 10 ppt	 #right
-bindsym Left resize shrink width 10px or 10 ppt	 #left
-bindsym Down resize grow height 10px or 10 ppt 	 #down
-bindsym Up resize shrink height 10px or 10 ppt 	 #up
-bindsym Right resize grow width 10px or 10 ppt 	 #right
+bindsym j resize shrink width 10px or 10 ppt	 
+bindsym k resize grow height 10px or 10 ppt 	 
+bindsym i resize shrink height 10px or 10 ppt    
+bindsym l resize grow width 10px or 10 ppt	 
+bindsym Left resize shrink width 10px or 10 ppt	 
+bindsym Down resize grow height 10px or 10 ppt 	 
+bindsym Up resize shrink height 10px or 10 ppt 	
+bindsym Right resize grow width 10px or 10 ppt 	 
 
 bindsym Return mode "default"
 bindsym Escape mode "default"
