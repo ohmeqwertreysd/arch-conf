@@ -3,7 +3,7 @@ set $mod Mod4
 font pango:Monospace 10, Siji
 focus_follows_mouse yes
 floating_modifier $mod
-for_windows[class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 2
 workspace_auto_back_and_forth yes
 
 ## Gaps
@@ -125,20 +125,20 @@ bindsym Escape mode "default"
 
 
 # Color
-set $
-set $
-set $
-set $
-set $
+#set $
+#set $
+#set $
+#set $
+#set $
 
 #<colorclass>		<border> <background> <text> <indicator> <child_border>
-cliet.focused
-cliet.focused_inactive
-cliet.unfocused
-cliet.urgent
-client.placeholder
+#cliet.focused
+#cliet.focused_inactive
+#cliet.unfocused
+#cliet.urgent
+#client.placeholder
 
-client.background
+#client.background
 
 # Startup
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
