@@ -33,8 +33,8 @@ red = #f1383d
 pink = #f26262
 pink2 = #f64d64
  
-[bar/momiji]
-monitor = VGA-1
+[bar/kayo]
+monitor = eDP-1
 override-redirect = false
 bottom = false
 fixed-center = true
