@@ -158,7 +158,7 @@ format-prefix = " "
 type = internal/battery
 full-at = 98
 time-format = %H:%M
-battery = BAT0
+battery = BAT1
 adapter = AC
 
 format-charging = <animation-charging> <label-charging>
