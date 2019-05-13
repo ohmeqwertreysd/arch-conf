@@ -54,16 +54,16 @@ bindsym $mod+Return exec --no-startup-id termite;focus
 bindsym mod1+R exec --no-startup-id rofi -show run -font "Anonymous Pro 13"
 
 # Workspaces
-set $ws1 "name"
-set $ws2 "name"
-set $ws3 "name"
-set $ws4 "name"
-set $ws5 "name"
-set $ws6 "name"
-set $ws7 "name"
-set $ws8 "name"
-set $ws9 "name"
-set $ws10 "name"
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
+set $ws4 "4:"
+set $ws5 "5:"
+set $ws6 "6:"
+set $ws7 "7:"
+set $ws8 "8:"
+set $ws9 "9:"
+set $ws10 "10:"
 
 
 ## Workspace Keybinding
