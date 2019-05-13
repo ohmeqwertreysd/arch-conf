@@ -116,7 +116,7 @@ label-urgent-padding = 0
 
 [module/wifi]
 type = internal/network
-interface = wlp3s0
+interface = wlp2s0
 interval = 1.0
 udspeed-minwidth = 0
 
@@ -132,10 +132,10 @@ format =   <label-layout>
 
 [module/battery]
 type = internal/battery
-full-at = 98
+full-at = 99
 time-format = %H:%M
 battery = BAT1
-adapter = AC
+adapter = ACAD
 
 format-charging = <animation-charging> <label-charging>
 label-charging = %percentage%% (%time%)
