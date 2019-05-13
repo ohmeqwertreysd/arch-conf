@@ -15,14 +15,14 @@
 ;   The README contains alot of information
 ;
 ;==========================================================
-
-
+ 
+ 
 [global/wm]
 margin-top = 0
 margin-bottom = 0
-
+ 
 [color]
-white = #fff
+white = #ffffff
 base = #efebe0
 ;brown = #51311a
 brown = #666
@@ -32,156 +32,155 @@ purple = #e58a95
 red = #f1383d
 pink = #f26262
 pink2 = #f64d64
-
-[bar/kayo]
-monitor = eDP-1
+ 
+[bar/momiji]
+monitor = VGA-1
 override-redirect = false
 bottom = false
 fixed-center = true
-
 width = 100%
 height = 24
-
-font-0 = "Anonymous Pro:size=10;1"
-font-1 = "Siji:size=13;1"
-font-2 = "Ionicons:size=13;1"
-font-3 = "FontAwesome:size=13;1"
-
-background = ${color.base}
-foreground = ${color.brown}
-
+;radius = 15
+ 
+ 
+ 
+font-0 = "Monospace:size=10;1"
+;font-1 = "Ionicons:size=13;1"
+font-1 = "FontAwesome:size=13;1"
+ 
+;background = #000000
+;foreground = ${color.brown}
 padding-right = 1
 module-margin-right = 2
-
+ 
 tray-position = right
 tray-padding = 0
 tray-maxsize = 16
-
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
-
-modules-left = i3
-modules-center = xwindow
-modules-right = wifi battery volume keyboard date
-
-
+ 
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+ 
+modules-left = i3 xwindow
+;modules-center = xwindow
+modules-right = wifi eth battery volume keyboard date
+ 
+ 
 [module/xwindow]
 type = internal/xwindow
 format = <label>
 label = %title%
 label-maxlen = 75
-
+ 
 [module/i3]
 type = internal/i3
 strip-wsnumbers = false
 wrapping-scroll = false
-
+ 
 ## Terminal
-ws-icon-0 = 1;
-## Browser
-ws-icon-1 = 2;
-## Lab
-ws-icon-3 = 3;
-## Media
-ws-icon-4 = 4;
-## System
-ws-icon-5 = 5;
-## Mailing
-ws-icon-6 = 6;
-## Doc
-ws-icon-7 = 7;
-ws-icon-8 = 8;
-ws-icon-9 = 9;
-
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+ 
 format = <label-state> <label-mode>
-
+ 
 label-mode = %mode%
 label-mode-padding = 0
-
+ 
 label-focused = %icon%%name%
-label-focused-foreground = ${color.pink}
-label-focused-background = ${color.base}
+label-focused-foreground = ${color.white}
+label-focused-background = ${color.purple}
 label-focused-padding = 1
-
+ 
 label-unfocused =%icon%%name%
 label-unfocused-padding = 1
-
+ 
 label-visible =%icon%%name%
 label-visible-padding = 0
-
+ 
 label-urgent =%icon%%name%
-label-urgent-background = ${color.base}
+label-urgent-background = ${color.white}
 label-urgent-foreground = ${color.red}
 label-urgent-padding = 0
-
+ 
 [module/wifi]
 type = internal/network
-interface = wlp2s0
+interface = wlp3s0
 interval = 1.0
 udspeed-minwidth = 0
-
+ 
 format-connected =  <label-connected>
 format-disconnected = <label-disconnected>
 label-connected =  %ifname%
 label-disconnected =  not connected
-
-
+ 
+ 
+ 
 [module/keyboard]
 type = internal/xkeyboard
-format =   <label-layout>
-
+format =   <label-layout>
+;format-background = ${color.red}
+ 
+[module/eth]
+type = internal/network
+interface = enp0s3
+ 
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+label-connected = 
+label-disconnected = 
+ 
+ 
 [module/battery]
 type = internal/battery
-full-at = 99
+full-at = 98
 time-format = %H:%M
-battery = BAT1
-adapter = ACAD
-
+battery = BAT0
+adapter = AC
+ 
 format-charging = <animation-charging> <label-charging>
 label-charging = %percentage%% (%time%)
-
+ 
 format-discharging = <ramp-capacity> <label-discharging>
 label-discharging = %percentage%% (%time%)
-
+ 
 format-full = <label-full>
-format-full-prefix = " "
-
+format-full-prefix = ""
+ 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-
+ 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-framerate = 750
-
-
+ 
+ 
 [module/volume]
 type = internal/pulseaudio
-
+ 
 master-mixer = Master
 speaker-mixer = Speaker
 headphone-mixer = Headphone
 headphone-id = 18
 mapped = true
-
+ 
 use-ui-max = false
-
-format-volume = <ramp-volume> <label-volume>
+ 
+format-volume =  <label-volume>%
 label-volume = %percentage%
-format-muted-prefix = " "
-#format-muted-prefix = ""
-label-muted = MUTE
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
-
-#ramp-headphones-0 = 
-ramp-headphones = 
-
+label-muted =  MUTE
+;format-volume-background = ${color.pink}
+ 
 [module/date]
 type = internal/date
 label =  %time% %date%
-time =  %H:%M:%S  %B-%d
+time =  %H:%M  %d %B
+;format-background = ${color.pink2}
