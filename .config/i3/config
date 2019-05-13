@@ -51,7 +51,7 @@ bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'Exiting i3' 
 
 ## Quick Launch
 bindsym $mod+Return exec --no-startup-id termite;focus
-
+bindsym mod1+R exec --no-startup-id rofi -show run -font "Anonymous Pro 13"
 
 # Workspaces
 set $ws1 "name"
