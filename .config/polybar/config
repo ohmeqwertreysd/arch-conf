@@ -62,7 +62,7 @@ scroll-down = i3wm-wsprev
 
 modules-left = i3
 modules-center = xwindow
-modules-right = wifi eth battery volume keyboard date
+modules-right = wifi battery volume keyboard date
 
 
 [module/xwindow]
@@ -129,15 +129,6 @@ label-disconnected =  not connected
 [module/keyboard]
 type = internal/xkeyboard
 format =   <label-layout>
-
-[module/eth]
-type = internal/network
-interface = enp0s3
-
-format-connected = <label-connected>
-format-disconnected = <label-disconnected>
-label-connected = 
-label-disconnected = 
 
 [module/battery]
 type = internal/battery
