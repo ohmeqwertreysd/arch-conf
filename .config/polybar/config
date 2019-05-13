@@ -62,7 +62,7 @@ scroll-down = i3wm-wsprev
 
 modules-left = i3
 modules-center = xwindow
-modules-right = wifi eth cpu memory battery volume keyboard date
+modules-right = wifi eth battery volume keyboard date
 
 
 [module/xwindow]
@@ -138,21 +138,6 @@ format-connected = <label-connected>
 format-disconnected = <label-disconnected>
 label-connected = 
 label-disconnected = 
-
-
-[module/cpu]
-type = internal/cpu
-label = %percentage%%
-interval = 2
-format-prefix = " "
-
-
-[module/memory]
-type = internal/memory
-interval = 2
-label = %mb_used%
-format-prefix = " "
-
 
 [module/battery]
 type = internal/battery
