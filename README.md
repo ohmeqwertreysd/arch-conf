@@ -1,6 +1,6 @@
-# arch-conf
-conf for archlinux with i3wm&amp;polybar
-```sh
-$ sudo chmdo +x ~/.config/polybar/launch.sh
-$ sudo chmdo +x ~/.config/i3/i3exit.sh
-$ sudo chmdo +x ~/.fehbg
+# KDE Plasma 6 Dots
+
+- Global Themes: [Scratchy](https://store.kde.org/p/1898344/)
+- Terminal: kitty
+- File Manager: dolphin
+- Icons: Papirus [[Lavender Catppuccin folders](https://github.com/catppuccin/papirus-folders)]
